@@ -1,0 +1,8 @@
+// 1. rootProject 경로를 설정한다.
+rootProject.name = 'multiModuleTestFinished'
+// 2. subModule의 경로 ( rootProject 하위의 경로 ) 를 지정한다 ( build.gradle 포함해야 함 )
+include 'blog-core'
+include 'blog-board'
+include 'blog-login'
+
+
