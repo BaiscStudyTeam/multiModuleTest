@@ -17,3 +17,10 @@ spring :
       hibernate:
         show_sql: true
         format_sql: true
+
+# 현재 dsn 설정이 먹히지 않아 수동으로 INIT 함
+sentry:
+  dsn: https://aca63734d7b844709390e4b636d2a967@o4505215665897472.ingest.sentry.io/4505215667011584
+  # Set traces-sample-rate to 1.0 to capture 100% of transactions for performance monitoring.
+  # We recommend adjusting this value in production.
+  traces-sample-rate: 1.0
