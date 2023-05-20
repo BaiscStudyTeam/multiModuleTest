@@ -1,0 +1,19 @@
+server :
+  address : localhost
+  port : 8080
+
+spring :
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://dev.c3andky0bnjd.ap-northeast-2.rds.amazonaws.com:3306?useSSL=false&useUnicode=true&serverTimezone=Asia/Seoul
+    username: admin
+    password: admin1234!
+  jpa:
+    database : mysql
+    show-sql : true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        show_sql: true
+        format_sql: true
