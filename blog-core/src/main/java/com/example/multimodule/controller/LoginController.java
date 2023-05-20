@@ -14,6 +14,7 @@ public class LoginController {
 
     private final LoginService loginService;
 
+    // PULLREQUEST용 주석 추가
     @GetMapping("/insertUser")
     public ResponseEntity<Object> insertUser() {
         loginService.insertLoginUser();
