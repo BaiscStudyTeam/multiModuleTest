@@ -25,14 +25,7 @@ public class LoginController {
     // PULLREQUEST용 주석 추가
     @GetMapping("/testSentry")
     public ResponseEntity<Object> testSentry() {
-        Sentry.init(options -> {
-            options.setDsn("https://aca63734d7b844709390e4b636d2a967@o4505215665897472.ingest.sentry.io/4505215667011584");
-        });
-        try {
-            throw new Exception("SPRING BOOT : Throw Test Exception");
-        } catch (Exception e) {
-            Sentry.captureException(e);
-        }
+        if(true) throw new NullPointerException();
         return ResponseEntity.ok().body(null);
     }
 }
